@@ -18,8 +18,11 @@ Backend for nodejs auth
 - port : 5432
 
 1. Create Database 
+    ```
     CREATE DATABASE nodeauth;
+    ```
 2. Create Table
+    ```
     CREATE TABLE users (
       id SERIAL PRIMARY KEY NOT NULL,
       name VARCHAR(50) NULL,
@@ -29,12 +32,15 @@ Backend for nodejs auth
       password VARCHAR NULL,
       registration_date timestamp(0) NULL
     );
+    ```
 
 ## Install
-
+```
   $ git clone https://github.com/dayatdev/nodejs-auth-server.git
   $ cd nodejs-auth-server
   $ npm install
-
+```
 ## Run
+```
   $ npm run dev
+```
